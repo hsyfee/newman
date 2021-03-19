@@ -1,0 +1,406 @@
+/*导航栏*/
+header {
+  width: 1200px;
+  height: 85px;
+  line-height: 80px;
+  margin: 0 auto;
+}
+
+header .logo {
+  width: 146px;
+  height: 85px;
+  margin-right: 200px;
+  float: left;
+}
+
+header .nav {
+  overflow: hidden;
+  float: left;
+}
+
+header .nav li {
+  float: left;
+  font-size: 16px;
+  margin-right: 56px;
+}
+
+.nav-active, header .nav li:hover {
+  border-bottom: 4px solid #01a1ff;
+}
+
+header .nav li a {
+  color: #333;
+}
+
+header .nav li .active {
+  color: #01a1ff;
+}
+
+header .nav li:hover a {
+  color: #01a1ff;
+}
+
+header .language {
+  float: right;
+}
+
+header .language li {
+  float: left;
+  width: 47px;
+  height: 50px;
+  border: 1px solid transparent;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+header .language li:first-child {
+  border: 1px solid #ccc;
+}
+
+header .language li:hover {
+  border: 1px solid #ccc;
+}
+
+header .language li:last-child:hover header .language li:first-child {
+  border: none;
+}
+/*banner*/
+.banner {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+.banner .imgs {
+  width: 1000%;
+  /*position: absolute;*/
+}
+.banner li {
+  float: left;
+}
+.banner img {
+  width: 100%;
+  height: 400px;
+}
+ .prev, .next {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 184px;
+}
+ .prev {
+  background: url("../home/images/index-xb2.png") no-repeat;
+  left: 44px;
+}
+ .prev:hover {
+  background: url("../home/images/index-xb4.png") no-repeat;
+}
+ .next {
+  background: url("../home/images/index-xb1.png") no-repeat;
+  right: 44px;
+}
+ .next:hover {
+  background: url("../home/images/index-xb3.png") no-repeat;
+}
+.banner .count {
+  width: 100%;
+  height: 12px;
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  margin-left: -20.5px;
+}
+.banner .count li {
+  float: left;
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  opacity: .2;
+  filter: alpha(opacity=20);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.banner .count .active {
+  background-color: #01a1ff;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/*标题公共样式*/
+.title {
+  font: 34px "Franklin Gothic Medium";
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin-bottom: 42px;
+}
+.title:after {
+  content: '';
+  display: block;
+  width: 42px;
+  border-bottom: 4px solid #01a1ff;
+  position: absolute;
+  left: 50%;
+  margin-left: -21px;
+  bottom: -8px;
+}
+/*首页p样式*/
+.index-p {
+  width: 1200px;
+  font: 14px  宋体;
+  color: #666666;
+  padding: 0 90px;
+  line-height: 24px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+/*侧边栏*/
+.aside {
+  float: left;
+}
+.aside aside {
+  clear: both;
+}
+.aside aside:first-child {
+  margin-bottom: 40px;
+}
+aside {
+  float: left;
+  width: 200px;
+  border: 1px solid #01a1ff;
+  margin-right: 45px;
+}
+aside .aside-title {
+  background-color: #01a1ff;
+  padding: 30px 0 24px;
+  text-align: center;
+  color: #fff;
+}
+aside .title {
+  padding-bottom: 10px;
+  margin-bottom: 11px;
+  font-size: 26px;
+}
+aside .title:after {
+  width: 22px;
+  border-bottom: 3px solid #fff;
+  margin-left: -11px;
+  bottom: 0;
+}
+aside .aside-title p {
+  font-size: 14px;
+}
+aside .aside-nav {
+  padding: 9px 13px 13px;
+  font: 18px 宋体;
+}
+aside .aside-nav li {
+  width: 172px;
+  padding: 6px 0 5px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+aside .aside-nav li:last-child {
+  margin-bottom: 0;
+}
+aside .aside-nav li:hover {
+  background-color: #01a1ff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+aside .aside-nav li:hover a {
+  color: #fff;
+}
+aside .aside-nav a {
+  color: #666666;
+}
+aside .aside-nav i {
+  font-weight: bold;
+}
+ .aside-active {
+  background-color: #01a1ff;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+}
+.aside-active a {
+  color: #fff !important;
+}
+.aside .search {
+  position: relative;
+  overflow: hidden;
+ }
+.aside .search input {
+  width: 137px;
+  height: 36px;
+  display: block;
+  margin: 9px 13px;
+  padding: 0 25px 0 10px;
+  border: 1px solid #cccccc;
+  color: #666666;
+}
+.aside .search span {
+  color: #01a1ff;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 25px;
+}
+/*content-title*/
+.content-title {
+  position: relative;
+  overflow: hidden;
+  padding: 0 18px 8px 0;
+  border-bottom: 1px solid #d3d3d3;
+}
+.content-title h3 {
+  float: left;
+  font-size: 28px;
+  color: #333333;
+  border-left: 3px solid #01a1ff;
+  margin-left: 20px;
+  padding: 4px 8px 8px 7px;
+}
+.content-title h3 span {
+  color: #666666;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.content-title .crumbs-nav {
+  float: right;
+  font-size: 12px;
+  color: #999999;
+  position: absolute;
+  bottom: 16px;
+  right: 18px;
+}
+.content-title .crumbs-nav a {
+  color: #999999;
+}
+.content-title .crumbs-nav span {
+  color: #01a1ff;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  background-color: #01a1ff;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+.footer {
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+.footer-content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.footer-nav {
+  float: left;
+}
+footer dl {
+  float: left;
+  margin-right: 100px;
+}
+footer dl:last-child {
+  margin-right: 0;
+}
+footer dl dt {
+  font: 16px 宋体;
+  font-weight: bold;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #fff;
+}
+footer dl dd {
+  font: 12px 宋体;
+  margin-top: 19px;
+}
+.footer-contact {
+  float: right;
+}
+.footer-contact input, .footer-contact textarea {
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #fff;
+  background-color: #01a1ff;
+  color: #fff;
+}
+.footer-contact input {
+  width: 144px;
+  height: 30px;
+  padding: 0 5px;
+}
+.footer-contact input::-webkit-input-placeholder, .footer-contact textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+.footer-contact input::-ms-input-placeholder, .footer-contact textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+.footer-contact input:first-child {
+  margin-right: 15px;
+}
+.footer-contact textarea {
+  width: 308px;
+  height: 106px;
+  margin: 10px 0;
+  padding: 5px;
+}
+.footer-contact input[type=button] {
+  width: 108px;
+  height: 30px;
+}
+footer .copyright {
+  font: 12px 宋体;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+/*banner*/
+.banner img {
+  width: 100%;
+  height: 400px;
+}
+/*container*/
+.container {
+  width: 1218px;
+  margin: 60px auto 90px;
+  overflow: hidden;
+}
+.container-content {
+  width: 970px;
+  float: left;
+}
+/*pages*/
+.pages {
+  margin-bottom: 10px;
+  position: relative;
+  left: 287px;
+}
+.pages li {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  background-color: #e5e5e5;
+  color: #999999;
+}
+.pages li:hover {
+  background-color: #01a1ff;
+  color: #fff;
+}
+.pages li:first-child, .pages li:last-child {
+  width: 92px;
+}

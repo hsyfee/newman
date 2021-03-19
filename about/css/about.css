@@ -1,0 +1,15 @@
+.container-content article {
+  overflow: hidden;
+  font: 14px 宋体;
+  color: #666666;
+  padding: 40px 18px 0 20px;
+}
+.container-content article img {
+  float: left;
+  margin-right: 32px;
+}
+.container-content article p {
+  text-indent: 2em;
+  line-height: 24px;
+  margin-bottom: 30px;
+}

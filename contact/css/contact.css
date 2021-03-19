@@ -1,0 +1,88 @@
+.contact-service {
+  text-align: center;
+  font-size: 16px;
+  color: #01a1ff;
+}
+.contact-service p:first-child {
+  width: 143px;
+  font-weight: bold;
+  line-height: 25px;
+  margin: 20px auto 0;
+  border-bottom: 2px solid #01a1ff;
+}
+.contact-service p+p {
+  margin: 6px 0 18px;
+}
+.map-contact {
+  margin: 40px 20px 0;
+  overflow: hidden;
+}
+#map {
+  margin-bottom: 30px;
+}
+.map-contact form {
+  width: 485px;
+  float: left;
+}
+.map-contact form h2{
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 13px;
+}
+.map-contact form label {
+  display: inline-block;
+  width: 48px;
+  font-size: 16px;
+  color: #666666;
+  text-align: left;
+  line-height: 36px;
+}
+.map-contact form label.contact {
+  vertical-align: top;
+}
+.map-contact form input {
+  width: 260px;
+  height: 25px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 0 10px;
+}
+.map-contact form textarea {
+  width: 415px;
+  height: 94px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin: 5px 0 10px -5px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+}
+.map-contact form input[type=submit] {
+  width: 96px;
+  height: 30px;
+  border: 0;
+  background-color: #01a1ff;
+  margin: 0 20px 0 48px;
+  font: 14px 宋体;
+  color: #fff;
+}
+.map-contact form input[type=reset] {
+  width: 96px;
+  height: 30px;
+  background-color: #fff;
+  font: 14px 宋体;
+  color: #999999;
+}
+.contact-info {
+  width: 373px;
+  float: right;
+}
+.contact-info h2 {
+  font-size: 20px;
+  color: #333333;
+}
+.contact-info p {
+  margin-top: 20px;
+  font: 14px 宋体;
+  color: #666666;
+}
